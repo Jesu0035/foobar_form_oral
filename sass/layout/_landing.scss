@@ -27,8 +27,9 @@
 }
 .welcome {
   display: flex;
-  /*  opacity: 0;
-  animation: fadeIn 2s ease-in forwards; */
+
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
   color: #fffffb;
   margin-top: 30vw;
   font-size: 40px;
@@ -105,6 +106,20 @@ a {
   #body_index {
     background-image: url(/dist/back_intro.png);
   }
+  .logo_background {
+    display: flex;
+    margin-top: 45vw;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .welcome {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 450px) {
@@ -123,10 +138,21 @@ a {
   .directions {
     margin-top: -45vw;
   }
+
+  #body_index {
+    background-image: url(/dist/back_intro.png);
+  }
+
+  .logo_background {
+    display: flex;
+    margin-top: 35vw;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-#body_index {
-  background-image: url(/dist/back_intro.png);
-}
+
 @media (min-width: 600px) {
   .directions {
     margin-top: -29vw;
@@ -142,7 +168,7 @@ a {
     display: flex;
     width: 40vw;
     justify-content: center;
-    margin-top: 20vw;
+    margin-top: 25vw;
     margin-left: auto;
     margin-right: auto;
     z-index: 10;
@@ -164,29 +190,18 @@ a {
     justify-content: center;
     font-size: 5vw;
     align-items: flex-end;
-    margin-top: 25vw;
+    margin-top: 3vw;
   }
-  .logo {
+
+  .logo_background {
     display: flex;
     margin-top: 10vw;
-    width: 25vw;
-    justify-content: center;
-    align-items: center;
-    z-index: 30;
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .logo_background {
-    margin-top: 8vw;
-    position: absolute;
-    display: flex;
-    /*  background-color: #555552; */
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
 
-    margin-left: 35%;
-    margin-right: 30%;
-    z-index: -2;
-  }
   .btn_intro_02 {
     text-decoration: none;
     border: 1px solid white;
