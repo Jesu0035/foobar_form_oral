@@ -1,0 +1,35 @@
+@use "../base/fonts";
+@use "../base/color";
+
+/* header {
+  height: auto;
+  width: 100%;
+  background-color: color.$head-color;
+} */
+
+header {
+  display: flex;
+  /*  background-color: var(--primary-color); */
+  background-image: url(/dist/header_back.png);
+
+  justify-content: center;
+
+  .foo-logo {
+    width: 25%;
+    padding: 1vw;
+  }
+}
+.amount {
+  width: 50%;
+}
+
+#counter,
+#subtract,
+#add {
+  display: inline-block;
+  padding: 10px;
+}
+
+.atc-img {
+  width: 10%;
+}

@@ -1,0 +1,20 @@
+@forward "header";
+@forward "button";
+@forward "form";
+@forward 'cards';
+@forward 'grid';
+@forward '_cart_box';
+@forward 'responsive';
+@forward '_landing';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: var(--background-color); */
+}
+#body_menu {
+  background-color: var(--background-color);
+}

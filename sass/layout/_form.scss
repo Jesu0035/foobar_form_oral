@@ -1,0 +1,216 @@
+@use "../base/color";
+@use "../base/fonts";
+
+.form-screen {
+  position: relative;
+  align-self: center;
+  padding: 2vw 0;
+  background-color: #588157;
+  border-radius: 5px;
+  position: absolute;
+  top: 15%;
+  left: 26%;
+  height: min-content;
+  width: max-content;
+  margin: auto;
+}
+
+#modal-one,
+#payment,
+#confirm {
+  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+#done {
+  background-color: lightgreen;
+  color: white;
+  border: 1px solid lightgreen;
+}
+
+#progress-bar {
+  display: flex;
+  /*  margin: 0 3vw; */
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    border: 1px solid white;
+    display: block;
+    padding: 0.5vw;
+    border-radius: 50%;
+    height: clamp(42px, 1vw, 1vw);
+    width: clamp(42px, 1vw, 1vw);
+    line-height: clamp(42px, 1vw, 1vw);
+    text-align: center;
+  }
+
+  .fill {
+    color: #588157;
+    background-color: rgb(255, 255, 254);
+  }
+}
+
+.line {
+  width: 5vw;
+  height: 1px;
+  background-color: white;
+}
+
+input[type="button"]:not(.close) {
+  background: pink;
+  border: 1px solid pink;
+  margin: 1vw 0;
+  border-radius: 5vw;
+  color: white;
+  transition: 0.25s;
+  margin: 0.5vw 0;
+  padding: 15px 60px;
+}
+
+#previous:hover {
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: -2vw;
+  right: -1vw;
+  border: 1px solid rgb(245, 240, 240);
+  border-radius: 5vw;
+  width: clamp(50px, 2vw, 2vw);
+  height: clamp(50px, 2vw, 2vw);
+}
+
+.close:hover {
+  background-color: #090a09;
+  cursor: pointer;
+  color: white;
+}
+
+input[type="button"]:not(.close):hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(185, 72, 72);
+}
+// delete inputs arrows //
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+//nirajan
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+.card-row {
+  .visa {
+    height: 10vw;
+    width: 10vw;
+  }
+  .mastercard {
+    height: 10vw;
+    width: 10vw;
+  }
+  .mobilepay {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .card-img {
+    width: 70%;
+  }
+}
+.order_container {
+  display: grid;
+  justify-content: center;
+  background-color: transparentize($color: #92a395, $amount: 0);
+  border-radius: 5px;
+  gap: 10px;
+  margin: 10px;
+  border: none;
+  width: 30vw;
+  position: relative;
+  right: -9vw;
+  /*  background-color: #c5cec5; */
+}
+.order_container form {
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1vw;
+
+  /* width: 22vw;
+  margin-left: 4vw;
+  margin-top: -40px; */
+}
+
+.form-group {
+  display: grid;
+  box-sizing: border-box;
+  padding: auto;
+  margin-left: 10%;
+  margin-right: 20%;
+
+  label {
+    font-family: fonts.$raleway;
+    color: rgb(241, 239, 239);
+    font-size: clamp(18px, 1.2vw, 1.2vw);
+    margin-bottom: 0.5vw;
+  }
+
+  input,
+  select {
+    flex-wrap: wrap;
+    padding: 1.2vh;
+    background: white;
+    border: none;
+    border-radius: 3px;
+
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(88, 87, 87);
+    width: clamp(200px, 20vw, 20vw);
+  }
+
+  input:focus,
+  select:focus {
+    outline: none;
+  }
+}
+
+.error {
+  color: red;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.pay-confirm {
+  font-family: fonts.$monteserrat;
+  font-size: 16px;
+  padding: 0.5vw;
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-weight: bolder;
+}
+#pay_thanks {
+  border: none;
+  color: gainsboro;
+}
