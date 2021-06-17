@@ -7,7 +7,7 @@ const splash = document.querySelector('.intro');
 document.addEventListener('DOMContentLoaded', (e) =>{
 	setTimeout( ()=>{
 		splash.classList.add('display_none');
-	}, 1000);
+	}, 15000);
 })
 
 
