@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  
+  <body id="body_menu">
+    <div id="app">
+      <div id="wrapper">  
+        
+        
+      <header class="banner">
+        <img src="/logo.png" alt="" class="foo-logo">
+  
+      </header>
+      
+
+<div class="container"> 
+  
+  <div class="checkbox_container">
+    <div class="box_order"> <h1 class="your_order">Your Order</h1></div>
+    
+   <div class="pay"> <button class="pay-confirm">PAY -here</button></div>
+     <div>
+     
+     </div>
+
+<form>
+   
+
+
+  </form>
+
+  </div>
+      <main>
+      
+      </main>
+       
+      
+      <template>
+        <section class="cards">
+        <div class="b-img">
+          <img src="/elhefe" alt="" class="beer-img">
+         
+        </div>
+     
+        <article class="beer-desc">
+
+           <h1 class="name"><span>Name:</span></h1>
+           <h1 class="cate"><span>Category:</span></h1>
+           <h1 class="alc-lvl"><span>Alcohol level:</span></h1>
+          <div class="btn_container">
+            <button class="atc">add to cart</button>
+          </div>
+        </article>
+      </section>
+    </template>
+   
+    
+ 
+
+
+
+
+    <section id="selected-beer" class="hidden">
+      
+ 
+      <article class="form-screen " id="payment">
+        <input id="close-2" type="button" class="close" value="✕" />
+        
+        <div id="progress-bar">
+          
+          <h2 class="fill">1</h2>
+          <div class="line"></div>
+          <h2>✔</h2>
+        </div>
+  
+        <div class="order_container">
+         <div class="card-row">
+          <div class="visa">
+            <img src="/visa.png" class="card-img">
+          </div>
+          <div class="mastercard">
+            <img src="/mp.png" class="card-img">
+          </div>
+          <div class="mobilepay">
+            <img src="/mobilepay.png" class="card-img">
+          </div>
+         </div>
+          <form id="form">
+
+            <div class="form-group">
+              <label for="your_name">Name</label>
+              <input id="your_name" type="text" name="your_name" required />
+              <span id="error-1" class="error hidden">Name is required. Please, enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="c_number"> Card Number</label>
+              <input id="c_number" type="number" name="card_number" minlength="16" required />
+              <span id="error-2" class="error hidden">Card number is required. Please, enter your card number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="e_date">Expiry Date</label>
+              <input id="e_date" type="date" name="e_date" minlength="20" placeholder="MM / YY"  required />
+  
+              <span id="error-3" class="error hidden">Expiry date is required. Please, enter your expiry date.</span>
+            </div>
+            <div class="form-group">
+              <label for="s_number">Security Number</label>
+              <input id="s_number" type="number" name="s_number" minlength="20" placeholder="123"  required />
+  
+              <span id="error-4" class="error hidden">security number is required. Please, enter your security number.</span>
+            </div>
+            <div class="form-group">
+              <label for="postal-code">zip/postal code</label>
+              <input id="p_code" type="text" name="postal code" />
+            </div>
+          </form>
+          <button id="submit" class="submit">Submit</button>
+        </div>
+      
+        
+        </article>
+ 
+      <article class="form-screen hidden" id="confirm">
+        <input id="close-3" type="button" class="close" value="✕" />
+        <div id="progress-bar">
+      
+          <h2>1</h2>
+          <div class="line"></div>
+          <h2 id="done">✔</h2>
+        </div>
+     
+          <div class="order_container">
+            <form>
+              <fieldset id="pay_thanks">
+             
+                <h2 >Thanks for your order!</h2>
+                
+            </fieldset>
+            </form>
+          </div>
+       
+      </article>
+    </section>
+  </div>
+  </div>      
+  </div>
+  
+   <script type="module" src="/main.js"></script>
+   <!-- <script type="module" src="landing.js"></script> -->
+  </body>
+</html>
