@@ -157,15 +157,6 @@ function get() {
 
  }
  
-
-
-
-
-
-
-  
-
-
 function closeForm(){
   console.log("ll")
 
@@ -174,19 +165,19 @@ function closeForm(){
   document.querySelector("main").classList.remove("blurred");
   location.reload();
 }
- 
+ /* 
 function backToPrevious(){
 console.log("btp")
 
 document.querySelector("#payment").classList.add("hidden");
 }
-/* confirm payment section */
+/* confirm payment section 
 function confirm_payment(){
 document.querySelector("#payment").classList.add("hidden");
 document.querySelector('#confirm').classList.remove('hidden');
 
 
-}
+} */
 
 
 

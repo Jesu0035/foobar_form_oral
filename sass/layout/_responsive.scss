@@ -52,8 +52,18 @@ $breakpoint-mobile: 480px;
   }
 
   .order_container {
-    width: 76vw;
+    width: 56vw;
     right: -6vw;
+
+    background-color: transparentize($color: #92a395, $amount: 0);
+
+    margin: 0px;
+    border: none;
+    width: 20vw;
+    position: relative;
+    right: auto;
+    margin-top: 15vw;
+    /*  background-color: #c5cec5; */
   }
 
   .form-group label {
@@ -71,5 +81,22 @@ $breakpoint-mobile: 480px;
   }
   .alc-lvl {
     margin-bottom: 3vw;
+  }
+  #confirm.form-screen {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .order_container {
+    display: flex;
+    width: auto;
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .form-screen {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 300px;
   }
 }
