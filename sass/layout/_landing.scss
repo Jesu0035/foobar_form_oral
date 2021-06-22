@@ -7,7 +7,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(/dist/back_intro.png);
+  background-color: #0e1e25;
+  /* background-image: url(/public/back_intro.png); */
 }
 .intro.display_none {
   z-index: -10;
@@ -17,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: black;
+  background-color: #0e1e25;
   transition: all 0.5s;
 }
 @keyframes fadeIn {

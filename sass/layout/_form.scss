@@ -133,28 +133,24 @@ input[type="number"] {
 }
 .order_container {
   display: grid;
+  left: 0vw;
   justify-content: center;
   background-color: transparentize($color: #92a395, $amount: 0);
   border-radius: 5px;
   gap: 10px;
   margin: 10px;
   border: none;
-  width: 30vw;
   position: relative;
   right: -9vw;
-  margin-top: 15vw;
+
   /*  background-color: #c5cec5; */
 }
-.order_container form {
+/* .order_container form {
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1vw;
-
-  /* width: 22vw;
-  margin-left: 4vw;
-  margin-top: -40px; */
-}
+} */
 
 .form-group {
   display: grid;
@@ -162,31 +158,31 @@ input[type="number"] {
   padding: auto;
   margin-left: 10%;
   margin-right: 20%;
+}
 
-  label {
-    font-family: fonts.$raleway;
-    color: rgb(241, 239, 239);
-    font-size: clamp(18px, 1.2vw, 1.2vw);
-    margin-bottom: 0.5vw;
-  }
+label {
+  font-family: fonts.$raleway;
+  color: rgb(241, 239, 239);
+  font-size: clamp(18px, 1.2vw, 1.2vw);
+  margin-bottom: 0.5vw;
+}
 
-  input,
-  select {
-    flex-wrap: wrap;
-    padding: 1.2vh;
-    background: white;
-    border: none;
-    border-radius: 3px;
+input,
+select {
+  flex-wrap: wrap;
+  padding: 1.2vh;
+  background: white;
+  border: none;
+  border-radius: 3px;
 
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: rgb(88, 87, 87);
-    width: clamp(200px, 20vw, 20vw);
-  }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(88, 87, 87);
+  width: clamp(200px, 20vw, 20vw);
+}
 
-  input:focus,
-  select:focus {
-    outline: none;
-  }
+input:focus,
+select:focus {
+  outline: none;
 }
 
 .error {
