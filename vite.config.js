@@ -7,9 +7,9 @@ module.exports = {
     rollupOptions: {
       input: {
         home: resolve(__dirname, 'index.html'),
-        /* MENU: resolve(__dirname, 'menu.html'), */
+        menu: resolve(__dirname, 'menu.html'),
        
       }
     }
-  }
+  } 
 }
