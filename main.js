@@ -96,28 +96,39 @@ function get() {
           document.querySelector("#error-2").classList.add("hidden");
           document.querySelector("#error-3").classList.add("hidden");
           document.querySelector("#error-4").classList.add("hidden");
+          document.querySelector("#error-5").classList.add("hidden");
           document.querySelector("#error-1").classList.remove("hidden");
         } else if (!form.elements.c_number.checkValidity()) {
           document.querySelector("#error-1").classList.add("hidden");
           document.querySelector("#error-3").classList.add("hidden");
           document.querySelector("#error-4").classList.add("hidden");
+          document.querySelector("#error-5").classList.add("hidden");
           document.querySelector("#error-2").classList.remove("hidden");
         }else if (!form.elements.e_date.checkValidity()){
           document.querySelector("#error-1").classList.add("hidden");
           document.querySelector("#error-2").classList.add("hidden");
           document.querySelector("#error-4").classList.add("hidden");
+          document.querySelector("#error-5").classList.add("hidden");
           document.querySelector("#error-3").classList.remove("hidden");
         } else if (!form.elements.s_number.checkValidity()){
           document.querySelector("#error-1").classList.add("hidden");
           document.querySelector("#error-2").classList.add("hidden");
           document.querySelector("#error-3").classList.add("hidden");
+          document.querySelector("#error-5").classList.add("hidden");
           document.querySelector("#error-4").classList.remove("hidden");
-        }else {
+        }
+        else if (!form.elements.s_number.checkValidity()){
+          document.querySelector("#error-1").classList.add("hidden");
+          document.querySelector("#error-2").classList.add("hidden");
+          document.querySelector("#error-3").classList.add("hidden");
+          document.querySelector("#error-4").classList.add("hidden");
+          document.querySelector("#error-5").classList.remove("hidden");
+        } else {
           document.querySelector("#payment").classList.add("hidden");
           document.querySelector("#confirm").classList.remove("hidden");
           console.log("called")
           
-          
+          /* form.setAttribute("novalidate", true);    */    
   const data = [
     { name: beer.name , amount: 1},
     
@@ -165,22 +176,12 @@ function closeForm(){
   document.querySelector("main").classList.remove("blurred");
   location.reload();
 }
- /* 
-function backToPrevious(){
-console.log("btp")
-
-document.querySelector("#payment").classList.add("hidden");
-}
-/* confirm payment section 
-function confirm_payment(){
-document.querySelector("#payment").classList.add("hidden");
-document.querySelector('#confirm').classList.remove('hidden');
-
-
-} */
 
 
 
 
 
-/* form.setAttribute("novalidate", true); */
+
+
+
+

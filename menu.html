@@ -96,7 +96,7 @@
 
             <div class="form-group">
               <label for="c_number"> Card Number</label>
-              <input id="c_number" type="number" name="card_number" minlength="16" required />
+              <input id="c_number" type="number" name="card_number" maxlength="16" required />
               <span id="error-2" class="error hidden">Card number is required. Please, enter your card number.</span>
             </div>
 
@@ -108,14 +108,19 @@
             </div>
             <div class="form-group">
               <label for="s_number">Security Number</label>
-              <input id="s_number" type="number" name="s_number" minlength="20" placeholder="123"  required />
+              <input id="s_number" type="number" name="s_number" maxlength="3" placeholder="123"  required />
   
               <span id="error-4" class="error hidden">security number is required. Please, enter your security number.</span>
             </div>
             <div class="form-group">
-              <label for="postal-code">zip/postal code</label>
-              <input id="p_code" type="text" name="postal code" />
+              
+              <label for="postal-code"> I am 18 years old 
+                <span class="confirm_age"> * </span>
+              </label>
+              <input class="checkbox" id="p_code" type="checkbox" name="postal code" required />
+              <span id="error-5" class="error hidden">checkbox</span>
             </div>
+          
           </form>
           <button id="submit" class="submit">Submit</button>
         </div>

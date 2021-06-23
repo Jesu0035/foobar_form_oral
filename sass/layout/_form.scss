@@ -142,15 +142,7 @@ input[type="number"] {
   border: none;
   position: relative;
   right: -9vw;
-
-  /*  background-color: #c5cec5; */
 }
-/* .order_container form {
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1vw;
-} */
 
 .form-group {
   display: grid;
@@ -211,4 +203,14 @@ select:focus {
 #pay_thanks {
   border: none;
   color: gainsboro;
+}
+.confirm_age {
+  color: red;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  display: flex;
 }

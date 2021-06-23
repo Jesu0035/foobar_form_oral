@@ -2,7 +2,7 @@
 @use "../base/fonts";
 
 $breakpoint-tablet: 768px;
-$breakpoint-mobile: 400px;
+$breakpoint-mobile: 450px;
 
 @media only screen and (max-width: $breakpoint-tablet) {
   #payment {
@@ -82,12 +82,12 @@ $breakpoint-mobile: 400px;
     border: none;
     position: relative;
     right: -9vw;
-    width: 50vw;
+    width: 70vw;
   }
   .form-screen {
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 300px;
+    height: 600px;
   }
 }
