@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', (e) =>{
 	}, 1500);
 })
 
-
+/* 
   const header  = document.querySelector('.header');
 
 window.onscroll = function(){
@@ -21,4 +21,4 @@ window.onscroll = function(){
 } else{
 	header.classList.remove('active');
 }
-} 
+}  */
