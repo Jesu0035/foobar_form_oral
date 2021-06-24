@@ -91,6 +91,8 @@ function get() {
       document.querySelector("#selected-beer").classList.remove("hidden");
       document.querySelector(".pay-confirm").classList.add("hidden");
       document.querySelector("main").classList.add("blurred");
+
+      
       document.getElementById("submit").addEventListener("click", (e) =>{
         if (!form.elements.your_name.checkValidity()) {
           document.querySelector("#error-2").classList.add("hidden");

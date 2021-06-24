@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Foobar </title>
   </head>
   
   <body id="body_menu">
@@ -67,13 +67,13 @@
       <article class="form-screen " id="payment">
         <input id="close-2" type="button" class="close" value="✕" />
         
-        <div id="progress-bar">
+       <!--  <div id="progress-bar">
           
-          <h2 class="fill">1</h2>
+          
           <div class="line"></div>
           <h2>✔</h2>
-        </div>
-  
+        </div> -->
+  <h2 class="pay_details">Payment details </h2>
         <div class="order_container">
          <div class="card-row">
           <div class="visa">
@@ -96,7 +96,7 @@
 
             <div class="form-group">
               <label for="c_number"> Card Number</label>
-              <input id="c_number" type="number" name="card_number" maxlength="16" required />
+              <input id="c_number" type="number" name="card_number" pattern="[0-9\s]{13,19}" maxlength="16" required />
               <span id="error-2" class="error hidden">Card number is required. Please, enter your card number.</span>
             </div>
 
@@ -130,18 +130,26 @@
  
       <article class="form-screen hidden" id="confirm">
         <input id="close-3" type="button" class="close" value="✕" />
-        <div id="progress-bar">
+       <!--  <div id="progress-bar">
       
           <h2>1</h2>
           <div class="line"></div>
           <h2 id="done">✔</h2>
-        </div>
+        </div> -->
      
           <div class="order_container">
             <form>
               <fieldset id="pay_thanks">
              
-                <h2 >Thanks for your order!</h2>
+                <h2 class="thanks_01" >Thank you
+                  <br> for your <br>
+                   order!</h2>
+                   <span class="order_no">
+                     your order number is <br>
+                     <b>#
+                       0025
+                      </b>
+                   </span>
                 
             </fieldset>
             </form>
